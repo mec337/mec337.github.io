@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin's Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 1.5em 0;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            text-align: center;
+            padding: 2em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, textarea, button {
+            margin-bottom: 15px;
+            padding: 0.5em;
+            width: 80%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Martin's Charlwood</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About</h2>
+        <p>A placeholder for subdomains.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/mldjorbv" method="POST">
+	    <input type="hidden" name="_subject" value="New Contact Form Submission">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        © 2025 Martin Charlwood | Built with ❤️
+    </footer>
+</body>
+</html>
